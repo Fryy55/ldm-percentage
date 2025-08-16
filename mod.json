@@ -11,6 +11,29 @@
 	"version": "v1.0.0",
 	"developer": "Fryy_55",
 	"description": "Shows LDM percentage in the editor",
+	"settings": {
+		"general-title": {
+			"type": "title",
+			"name": "General Settings"
+		},
+		"general-ldm": {
+			"type": "bool",
+			"name": "Show LDM Objects",
+			"description": "If <cg>enabled</c>, shows <cy>LDM</c> objects (object count that the level would have <cf>with LDM on</c>)\nIf <cr>disabled</c>, shows <cp>High Detail</c> objects (number of objects that would be <cj>disabled with LDM on</c>)",
+			"default": true
+		},
+		"general-precision": {
+			"type": "int",
+			"name": "Precision",
+			"description": "Sets the <cb>precision</c> of LDM percentage",
+			"min": 0,
+			"max": 4,
+			"default": 1,
+			"control": {
+				"slider": false
+			}
+		}
+	},
 	"tags": [
 		"offline",
 		"editor",
@@ -24,6 +47,12 @@
 		"geode.node-ids": {
 			"version": ">=v1.21.1",
 			"importance": "required"
+		}
+	},
+	"incompatibilities": {
+		"hjfod.betteredit": {
+			"version": ">=v6.10.0-beta.1",
+			"importance": "conflicting"
 		}
 	}
 }
