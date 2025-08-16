@@ -8,7 +8,7 @@
 	},
 	"id": "fryy_55.ldm-percentage",
 	"name": "LDM Percentage",
-	"version": "v1.0.0",
+	"version": "v1.0.1",
 	"developer": "Fryy_55",
 	"description": "Shows LDM percentage in the editor",
 	"settings": {

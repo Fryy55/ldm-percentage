@@ -18,7 +18,10 @@ class $modify(EditorPauseLayer) {
 		}
 
 		auto precision = Mod::get()->getSettingValue<int>("general-precision");
-		auto percentage = static_cast<double>(foundObjectsCount) / m_editorLayer->m_objectCount * 100.;
+		auto percentage = m_editorLayer->m_objectCount ?
+			static_cast<double>(foundObjectsCount) / m_editorLayer->m_objectCount * 100.
+			:
+			0.;
 
 		label->setString(
 			std::string(label->getString()).append(
