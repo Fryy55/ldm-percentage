@@ -8,7 +8,7 @@
 	},
 	"id": "fryy_55.ldm-percentage",
 	"name": "LDM Percentage",
-	"version": "v1.0.1",
+	"version": "v1.0.2",
 	"developer": "Fryy_55",
 	"description": "Shows LDM percentage in the editor",
 	"settings": {
@@ -20,7 +20,7 @@
 			"type": "bool",
 			"name": "Show LDM Objects",
 			"description": "If <cg>enabled</c>, shows <cy>LDM</c> objects (object count that the level would have <cf>with LDM on</c>)\nIf <cr>disabled</c>, shows <cp>High Detail</c> objects (number of objects that would be <cj>disabled with LDM on</c>)",
-			"default": true
+			"default": false
 		},
 		"general-precision": {
 			"type": "int",
